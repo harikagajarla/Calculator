@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5f59ca6ad3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="d-flex justify-content-center flex-column">
+        <div class="calculator">
+            <h1 class="heading mb-2 ">Calculatar</h1>
+            <input type="text" id="display" disabled="" />
+            <div class="buttons d-flex flex-row justify-content-center">
+                <button onclick="clearDisplay()" class="number m-2"> C </button>
+                <button onclick="deleteLastChar()" class="number m-2"> DE </button>
+                <button onclick="addPercent()" class="number m-2"> % </button>
+                <button onclick="addOperator('/')" class="number operator m-2"> / </button>
+            </div>
+            <div class="buttons d-flex flex-row justify-content-center">
+                <button onclick="addNumber('7')" class="number m-2"> 7 </button>
+                <button onclick="addNumber('8')" class="number m-2"> 8 </button>
+                <button onclick="addNumber('9')" class="number m-2"> 9 </button>
+                <button onclick="addOperator('*')" class="number operator m-2"> x </button>
+            </div>
+            <div class="buttons d-flex flex-row justify-content-center">
+                <button onclick="addNumber('4')" class="number m-2"> 4 </button>
+                <button onclick="addNumber('5')" class="number m-2"> 5 </button>
+                <button onclick="addNumber('6')" class="number m-2"> 6 </button>
+                <button onclick="addOperator('-')" class="number operator m-2"> - </button>
+            </div>
+            <div class="buttons d-flex flex-row justify-content-center">
+                <button onclick="addNumber('1')" class="number m-2"> 1 </button>
+                <button onclick="addNumber('2')" class="number m-2"> 2 </button>
+                <button onclick="addNumber('3')" class="number m-2"> 3 </button>
+                <button onclick="addOperator('+')" class="number operator m-2"> + </button>
+            </div>
+            <div class="buttons d-flex flex-row justify-content-center">
+                <button onclick="addNumber('!')" class="number m-2"> ! </button>
+                <button onclick="addNumber('0')" class="number m-2"> 0 </button>
+                <button onclick="addNumber('.')" class="number m-2"> . </button>
+                <button onclick="calculateResult()" class="number equal m-2"> = </button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
